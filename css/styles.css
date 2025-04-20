@@ -16,15 +16,51 @@
 
 /* GLOBAL STYLES 
 -------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     background: #fdfbfb;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1, h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Links 
+-------------------------*/
+a {
+    color: #ff567b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #17e6fd;
+}
+
+footer a {
+    color: #e4bfbf;
+}
+
+footer a:hover {
+    color: #ff567b;
 }
 
 /* HOMEPAGE 
 --------------------------*/
 .home {
-    background: url(../images/beige-background-6000.png) no-repeat;
+    background: url(../images/pink-background-5200.png) no-repeat;
     background-size: cover;
+}
+
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.9);
 }
 
 /* RESUME
@@ -44,3 +80,20 @@ body {
 
 /* FOOTER 
 --------------------------*/
+footer {
+    background: #2a231c;
+    color: #fdfbfb;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    width: 34px;
+}
