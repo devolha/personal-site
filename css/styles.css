@@ -99,6 +99,13 @@ footer a:hover {
     margin-left: 30px;
 }
 
+.resume-section {
+    margin-bottom: 30px;
+}
+.resume-section h2 {
+    border-bottom: 3px dashed #ff567b;
+}
+
 /* Profile
 --------------------------*/
 
