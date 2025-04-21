@@ -63,10 +63,16 @@ footer a:hover {
 --------------------------*/
 .home {
     background: url(../images/pink-background-5200.png) no-repeat bottom / cover;
+    display: flex;
+    flex-direction: column;
+}
+.content-background {
+    background: rgb(255 255 255 / 0.9);
+    padding: 30px;
 }
 
 .home .content-wrapper {
-    background: rgb(255 255 255 / 0.9);
+    flex: 1 0 auto;
 }
 
 .content-wrapper, .resume-section{
@@ -114,6 +120,20 @@ footer a:hover {
 
 /* Education
 --------------------------*/
+table {
+    border-collapse: collapse;
+    border: 2px solid #2a231c;
+}
+
+th, td {
+    border: 1px solid #2a231c;
+    padding: 8px 10px;
+}
+
+caption {
+    padding: 0 0 8px 8px;
+}
+
 
 /* Courses and certificates
 --------------------------*/
@@ -123,6 +143,9 @@ footer a:hover {
 footer {
     background: #2a231c;
     color: #fdfbfb;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
 }
 
 .socials {
@@ -132,8 +155,13 @@ footer {
 
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 
 .socials img {
     width: 34px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
 }
