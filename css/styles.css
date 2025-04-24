@@ -17,7 +17,9 @@
 /* GLOBAL STYLES 
 -------------------------*/
 html {
-    box-sizing: border-box;
+    box-sizing: content-box;
+    font-size: 62.5%;
+    text-align: justify;
 }
 
 *, *:before, *:after {
@@ -27,16 +29,43 @@ html {
 html, body {
     height: 100%;
     margin: 0;
-    font-size: 18px;
 }
 
 body {
     background: #fdfbfb;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
 }
 
 h1, h2 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+h1 {
+    font-size: 5rem;
+    line-height: 0.85;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    font-size: 2.1rem;
+    display: inline-block;
+    list-style: none;
+    padding: 0 3rem;
+    margin: 0;
 }
 
 /* Links 
@@ -48,7 +77,7 @@ a {
 
 a:hover {
     color: #ff567b;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 footer a {
@@ -81,28 +110,39 @@ footer a:hover {
     padding-bottom: 25px;
     padding-left: 30px; 
     padding-right: 30px;
-    max-width: 950px;
 }
 
-/* `
+.content-wrapper {
+    max-width: 960px;
+}
+
+/* 
 --------------------------*/
 
 .resume header::before {
     background: url(../images/pink-background-5200.png) no-repeat bottom / cover;
     content: "";
     display: block;
-    height: 264px;
+    height: 30rem;
 }
 
 .resume header {
     display: flow-root;
 }
+.resume-section {
+    margin-bottom: 3rem;
+    max-width: 1000px;
+}
+.resume-section h2 {
+    border-bottom: 3px dashed #ff567b;
+}
 
-.resume-header img {
-    width: 200px;
-    float: left;
-    margin-right: 40px;
-    margin-left: 30px;
+.resume-section p {
+    margin: 0;
+}
+
+hgroup {
+    text-align: center;
 }
 
 .resume-section {
@@ -112,17 +152,50 @@ footer a:hover {
     border-bottom: 3px dashed #ff567b;
 }
 
+
 /* Profile
 --------------------------*/
+.profile-img {
+    width: 400px;
+    float:left;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    margin-left: -3rem;
+}
+
+.side-p {
+    margin-left: 13rem;
+    margin-bottom: 3rem;
+}
 
 /* Work experience
 --------------------------*/
+.work-item {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    column-gap: 20px;
+}
+
+.work-details  h3{
+    line-height: 3rem;
+}
+
+.work-details p {
+    line-height: 3rem;
+    font-style: italic;
+}
+
+.work-summary {
+    margin-top: 4rem;
+}
 
 /* Education
 --------------------------*/
 table {
     border-collapse: collapse;
     border: 2px solid #2a231c;
+    margin-top: 2.5rem;
 }
 
 th, td {

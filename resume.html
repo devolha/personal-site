@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Volha Sakaloŭskaja, ERP Systems Specialist, Content Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="resume">
@@ -12,20 +15,11 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
 
             <div class="resume-header">
                 <hgroup>
-                    <img srcset="images/portfolio-image-200.png,
-                                images/portfolio-image-400.png 2x"
-                        sizes="(max-width: 400px) 200px,
-                                (max-width: 600px) 250px,
-                                (max-width: 800px) 300px,
-                                (max-width: 1600px) 350px"
-                        src="images/portfolio-image-200.png 200w"
-                        alt="Volha Sakaloŭskaja Portfolio CV picture">
                     <h1>Volha Sakaloŭskaja</h1>
                     <h2>ERP Systems Specialist + Multilingual Content Creator</h2>
                 </hgroup>
@@ -36,7 +30,26 @@
         <main>
             <section class="resume-section">
                 <h2>Profile</h2>
-                <p>Throughout my career, I have been surrounded by various digital business solutions for data analysis provided by Microsoft (MS Office), and I have diverse experience with ERP systems both in Poland and Belarus. I also feel comfortable in teaching, expanding the learning experience, which I demonstrated during my part-time work as a lecturer. By independently continuing education in IT, developing my own learning platform, I will be able to provide it to more people around the world and bring them closer together.</p>
+                <aside>
+                    <img class="profile-img"
+                    srcset="images/portfolio-image-200.png,
+                                images/portfolio-image-400.png 2x"
+                        sizes="(max-width: 400px) 200px,
+                                (max-width: 600px) 250px,
+                                (max-width: 800px) 300px,
+                                (max-width: 1600px) 350px"
+                        src="images/portfolio-image-200.png 200w"
+                        alt="Volha Sakaloŭskaja Portfolio CV picture">
+                </aside>
+                <aside class="side-p">
+                    <p><strong>Master of Economics and Law</strong>, specialist with <strong>over 4 years of professional experience</strong> in <strong>education, data analysis and IT</strong>. I stand out with a very good knowledge of English (B2 level), Polish (fluent knowledge) and very good academic results. I have extensive experience in operating information systems, including ERP Streamsoft Prestiż, MS Office tools (very good knowledge of MS Excel), additionally I have basic knowledge of AutoCAD and reading technical drawings. <br>
+                    <strong>Currently, for over 2 years, I have been developing my skills in the field of IT through self-education</strong>. I'll start postgraduate studies in Applied Computer Science (practical classes) at the University of Warmia and Mazury in Olsztyn (October 2025 - July 2026).<br>
+                    <strong>I have strong theoretical knowledge and understanding of the main principles of computer science, including</strong><em> digital information conceptes, programming (data structures, algorithms, discrete mathematics), Internet protocols and end-point security.</em><strong><br>
+                    I aslo have basic practical experience in operating system administration</strong> <em>(MS Windows, macOS and Linux/Ubuntu)</em> and <strong>virtualization</strong> <em>(VirtualBox)</em>, <strong>CI/CD methodology</strong> <em>(Jenkens)</em> and <strong>QA Testing </strong><em>(Selenium)</em>. <br>
+                    <p>I am passionate about developing high-quality and semantically correct web pages, as well as website development in general.</p>
+                     <p><strong>I am currently developing <a href="https://github.com/devolha/langutoro/">my own web platform</a> for learning foreign languages!</strong></p>
+                </aside>
+                
                 <a href="index.html">Back to homepage</a>
             </section>
 
@@ -72,36 +85,60 @@
                 <h2>Work Experience</h2>
                 <p>For more information about my complite work history please check my <a href="http://linkedin.com/in/volha-sakalouskaya/" target="_blank" rel="noopener noreferrer">LinkedIn profile.</a></p>
 
-                <section>
-                    <h3>Production Planning Assistant</h3>
-                    <p>Saxdor Yachts</p>
-                    <p>Full-time</p>
-                    <p>Mar 2023 - Present</p>
-
-                    <p></p>
-                </section>
-                <section>
-                    <h3>University Lecturer</h3>
-                    <p>Belarusian State Economic University</p>
-                    <p>Part-time</p>
-                    <p>Sep 2021 - Jun 2022</p>
-
-                    <p>Leactured and managed all curriculum for the adult training programs.</p>
+                <section class="work-item">
+                    <div class="work-details">
+                        <h3>Production Planning Assistant</h3>
+                        <p>Saxdor Yachts</p>
+                        <p>Full-time</p>
+                        <p>Mar 2023 - Present</p>
+                    </div>
+                    
+                    <div class="work-summary">
+                        <p></p>
+                    </div>
                 </section>
 
-                <section>
-                    <h3>Junior CRM Specialist</h3>
-                    <p>Belarusian State Economic University, Minsk</p>
-                    <p>Full-time</p>
-                    <p>Apr 2021 - Jun 2022</p>
+                <section class="work-item">
+                    <div class="work-details">
+                        <h3>University Lecturer</h3>
+                        <p>Belarusian State Economic University</p>
+                        <p>Part-time</p>
+                        <p>Sep 2021 - Jun 2022</p>
+                    </div>
+                    
+                    <div class="work-summary">
+                        <p>Leactured and managed all curriculum for the adult training programs.</p>
+                    </div>
+                </section>
 
-                    <p>Monitoring of employees' dokumentation with the help of the BSEU ERP system.</p>
+                <section class="work-item">
+                    <div class="work-details">
+                        <h3>Junior CRM Specialist</h3>
+                        <p>Belarusian State Economic University, Minsk</p>
+                        <p>Full-time</p>
+                        <p>Apr 2021 - Jun 2022</p>
+                    </div>
+                    
+                    <div class="work-summary">
+                        <p>Monitoring of employees' documentation with the help of the BSEU ERP system.</p>
+                    </div>
+                </section>
+                <section class="work-item">
+                    <div class="work-details">
+                        <h3>Voluntary</h3>
+                        <p>Belarusian State Economic University, Minsk</p>
+                        <p>Part-time</p>
+                        <p>Apr 2020 - Jun 2022</p>
+                    </div>
+                    
+                    <div class="work-summary">
+                        <p>Helping with work organization, documentation and curriculum changes at the Department of International Economic Law at the university.</p>
+                    </div>
                 </section>
             </section>
 
             <section class="resume-section">
                 <h2>Education</h2>
-
                 <section>
                     <h3>Self-taugth</h3>
                     <p>Information Technologies</p>
