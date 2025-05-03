@@ -1,23 +1,7 @@
-/*  Sand Dollar #e5ddc8
-    Teal #01949a
-    Navy Blue #004369
-    Red
- 
-    Tonys Pink #db1f48
-    Cowboy #e6a88b
-    Sanguine Brown #502a29
-    Flamingo #8b423a
-     
-    Stark White #e6d8c1
-    Zeus #2a231c
-    Driftwood #ab844d
-    Mule Fawn #845a29 */
-
-
 /* GLOBAL STYLES 
 -------------------------*/
 html {
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-size: 62.5%;
     text-align: justify;
 }
@@ -28,29 +12,27 @@ html {
 
 html, body {
     height: 100%;
-    margin: 0;
 }
 
 body {
     background: #fdfbfb;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.8rem;
+    margin: 0;
+    font-family:'Segoe UI', sans-serif;
+    font-size: 1.5rem;
     line-height: 1.4;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "Aboreto", system-ui;
     font-weight: 400;
-    font-style: normal;
-    margin: 1.5rem;
-    padding: 1rem;
+    margin: 0;
 }
 h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     line-height: 0.85;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 3.6rem;
 }
 h3 {
     font-size: 2.4rem;
@@ -77,7 +59,7 @@ a {
 
 a:hover {
     color: #ff567b;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 footer a {
@@ -88,6 +70,30 @@ footer a:hover {
     color: #ff567b;
 }
 
+.btn{
+    background: #ff567b;
+    border:#f91748;
+    color: #fdfbfb;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: .1em;
+    line-height: 1;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color:#2a231c;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 0px 15px;
+    max-width: 900px;
+}
+
 /* HOMEPAGE 
 --------------------------*/
 .home {
@@ -95,100 +101,260 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
-.content-background {
-    background: rgb(255 255 255 / 0.9);
-    padding: 30px;
-}
 
 .home .content-wrapper {
     flex: 1 0 auto;
 }
-
-.content-wrapper, .resume-section{
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    padding-left: 30px; 
-    padding-right: 30px;
+.content-background {
+    background: rgb(255 255 255 / 0.9);
+    padding: 20px;
 }
 
-.content-wrapper {
-    max-width: 960px;
-}
+@media screen and (max-width: 650px) {
+    .home .content-wrapper {
+        padding: 30px;
+    }
 
-/* 
+    .content-background {
+        padding: 30px;
+    }
+    
+}
+/* RESUME 
 --------------------------*/
 
 .resume header::before {
     background: url(../images/pink-background-5200.png) no-repeat bottom / cover;
     content: "";
     display: block;
-    height: 30rem;
+    height: 375px;
 }
 
-.resume header {
-    display: flow-root;
-}
 .resume-section {
-    margin-bottom: 3rem;
-    max-width: 1000px;
+    margin-bottom: 50px;
 }
 .resume-section h2 {
     border-bottom: 3px dashed #ff567b;
 }
 
-.resume-section p {
-    margin: 0;
+.download-link-en {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
 }
 
-hgroup {
-    text-align: center;
+.download-link-pl {
+    position: fixed;
+    top: 45px;
+    left: 5px;
+    font-size: 1.5rem;
 }
 
-.resume-section {
-    margin-bottom: 30px;
+
+@media screen and (min-width: 360px) and (max-width: 860px) {
+    p, .btn, a {
+        font-size: 2rem;
+    }
+
+    .download-link-en, .download-link-pl{
+        position: absolute;
+    }
+
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 30px;
+        
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    nav li {
+        font-size: 20px;
+        margin: 0;
+    }
+
 }
-.resume-section h2 {
-    border-bottom: 3px dashed #ff567b;
+ 
+@media screen and (max-width: 500px) {
+    .resume header::before {
+        height: 200px;
+    }
+
+    p, .btn, a {
+        font-size: 1.75rem;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 30px;
+        
+    }
+    h3 {
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+
+    nav li {
+        font-size: 15px;
+        margin: 0;
+    }
+    
 }
 
+@media screen and (min-width: 859px) and (max-width: 1400px) {
+    .profile-item {
+        display: grid;
+        grid-template-columns: auto 1fr; 
+        gap: 20px;
+      }
+    
+    .profile-item img {
+        margin-top: 16rem;
+        width: auto; 
+        height: auto;
+      }
+    
+    p, .btn, a {
+        font-size: 1.75rem;
+    }
+
+    .resume header::before {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 7rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 3.5rem;
+        text-align: center;
+        margin-top: 30px;
+        
+    }
+    h3 {
+        font-size: 2.7rem;
+        font-weight: 600;
+    }
+
+    nav li {
+        font-size: 25px;
+        margin: 0;
+    } 
+}
+
+ 
 
 /* Profile
 --------------------------*/
-.profile-img {
-    min-width: 300px;
-    height: auto;
-    float: left;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-right: 5rem;
-    margin-left: -3rem;
+.profile-item {
+    margin: 30px 0;
 }
 
-.side-p {
-    margin-left: 13rem;
-    margin-bottom: 3rem;
+.profile-item img {
+    width: 300px;
+
+}
+@media screen and (min-width: 860px) {
+    .profil-item {
+        display: flow-root;
+    }
+
+    .profil-item img {
+        float: left;
+        margin-right: 20px;
+    } 
+}
+
+@media screen and (min-width: 650px) and (max-width: 859px) {
+    
+    .profil-item img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile-item img {
+        width: 100%;
+    }
+}
+
+/* Projects
+--------------------------*/
+.project-item {
+    margin: 30px 0;
+}
+
+.project-item img {
+    width: 300px;
+
+}
+@media screen and (min-width: 860px) {
+    .project-item {
+        display: flow-root;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    } 
+}
+
+@media screen and (min-width: 650px) and (max-width: 859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 /* Work experience
 --------------------------*/
 .work-item {
-    display: grid;
-    grid-template-columns: 350px 1fr;
-    column-gap: 20px;
-}
-
-.work-details  h3{
-    line-height: 3rem;
+    margin: 30px 0;
 }
 
 .work-details p {
-    line-height: 3rem;
+    margin: 0;
     font-style: italic;
 }
 
-.work-summary {
-    margin-top: 4rem;
+@media  screen and (min-width: 860px) {
+    .work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+    }
+
+    .work-summary.p:first-child {
+        margin-top: 0;
+    }
 }
 
 /* Education
@@ -208,18 +374,73 @@ caption {
     padding: 0 0 8px 8px;
 }
 
+.education-item {
+    margin: 30px 0;
+}
+.education-item p {
+    margin: 0;
+}
+
+div:has(> blockquote) {
+    background-color: #efdee242;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  blockquote p::before {
+    content: "\201C";
+  }
+  
+  blockquote p::after {
+    content: "\201D";
+  }
+  
+  blockquote + p {
+    text-align: right;
+  }
 
 /* Courses and certificates
 --------------------------*/
+.certificate-item {
+    margin: 30px 0;
+}
+
+.certificate-item img {
+    width: 300px;
+
+}
+@media screen and (min-width: 860px) {
+    .certificate-item {
+        display: flow-root;
+    }
+
+    .certificate-item img {
+        float: left;
+        margin-right: 20px;
+    } 
+}
+
+@media screen and (min-width: 650px) and (max-width: 859px) {
+
+    .certificate-item img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
 
 /* FOOTER 
 --------------------------*/
 footer {
     background: #2a231c;
     color: #fdfbfb;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
 }
 
 .socials {
@@ -233,9 +454,24 @@ footer {
 }
 
 .socials img {
-    width: 34px;
+    width: 32px;
 }
 
 .socials img:hover {
     opacity: 0.5;
+}
+
+@media screen and (min-width: 860px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    } 
+}
+
+@media screen and (max-width: 859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
 }
